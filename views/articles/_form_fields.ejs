@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="form-group">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text"  value="<%=articles.title%>" class="form-control" required id="title" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control"  id="description" rows="3" name="description" required><%= articles.description%></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Markdown</label>
+            <textarea class="form-control" id="markdown" name="markdown" rows="5"  required><%=articles.markdown%></textarea>
+        </div>
+        <a href="/" class="btn btn-secondary ml-4">Cancel</a>
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+    </div>
+</body>
+</html>
